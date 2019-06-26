@@ -6,7 +6,14 @@
     <style>
         /* 기본적으로 상속이 되는 속성들 : font-size, color ... */
         /* 기본적으로 상속이 되지 않는 속성들 : border ... */
-
+        div {
+            color: darkolivegreen;
+            font-size: 32px;
+            border: 1px solid forestgreen;
+        }
+        p {
+            background-color: none;
+        }
         /*
         미디어쿼리(media query)
         @media 미디어명 { 특정미디어(장치)에서웹문서를출력할경우에만적용되는CSS } 
@@ -14,6 +21,15 @@
         */
         /* @media print { 인쇄시에만 적용되는 스타일 } */
         /* 인쇄시에는 p 엘리먼트가 보이지 않도록 설정 */
+        p {
+            color: yellow;
+        }
+        p {
+            color: green;
+        }
+        p {
+            color: blue;
+        }
     </style>
 </head>
 <body>

@@ -7,6 +7,7 @@
         img {
             width: 100px;
             height: 100px;
+            float: left;
             /* float : 엘리먼트를 현재 위치에서 위로 띄운 다음 왼쪽 또는 오른쪽 끝으로 이동 */
             /* 블럭엘리먼트는 float 된 엘리먼트 밑으로 깔려서 배치될 수 있지만, */
             /* 블럭엘리먼트 내부의 텍스트나 인라인엘리먼트는 float된 엘리먼트를 피해서 배치된다 */
@@ -15,7 +16,27 @@
 
         /* 고정폭 레이아웃 구현 */
         /* inline-block, float, margin, clear */
-        
+        .container {
+            width: 1080px;
+            margin: 0px auto;
+        }
+        #header {
+            background-color: red;
+        }
+        #aside {
+            background-color: blue;
+            width: 200px;
+            float: left;
+        }
+        #content {
+            background-color: aqua;
+            width: 880;
+            margin-left: 200px;
+        }
+        #footer{
+            background-color: blueviolet;
+            clear: left;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +50,10 @@
                 <li>메뉴03</li>
                 <li>메뉴04</li>
                 <li>메뉴05</li>
+                <li>메뉴06</li>
+                <li>메뉴07</li>
+                <li>메뉴08</li>
+                <li>메뉴09</li>
             </ul>
         </div>
         <div id="content">
